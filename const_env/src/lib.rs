@@ -1,7 +1,5 @@
-#![cfg_attr(
-    feature = "tracked",
-    feature(proc_macro_tracked_env)
-)]
+#![cfg_attr(feature = "tracked", feature(proc_macro_tracked_env))]
+#![cfg_attr(not(test), no_std)]
 
 extern crate proc_macro;
 
